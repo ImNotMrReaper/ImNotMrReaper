@@ -28,6 +28,7 @@ NOTES_INSTALL_URL="https://raw.githubusercontent.com/ImNotMrReaper/reapers-notes
 AUTOCOMPLETE_INSTALL_URL="https://raw.githubusercontent.com/ImNotMrReaper/tui-autocomplete/main/install.sh"
 RESEARCH_INSTALL_URL="https://raw.githubusercontent.com/ImNotMrReaper/deep-research/main/install.sh"
 LINK_INSTALL_URL="https://raw.githubusercontent.com/ImNotMrReaper/antigravity-link/main/install.sh"
+RESTORE_INSTALL_URL="https://raw.githubusercontent.com/ImNotMrReaper/display-window-restorer/main/install.sh"
 
 print_banner() {
     clear 2>/dev/null || true
@@ -98,8 +99,13 @@ install_research() {
 }
 
 install_link() {
-    echo -e "\n${CYAN}>>> [7/7] Installing Antigravity Link Peer AI Collaboration...${RESET}"
+    echo -e "\n${CYAN}>>> [7/8] Installing Antigravity Link Peer AI Collaboration...${RESET}"
     curl -fsSL "${LINK_INSTALL_URL}" | bash
+}
+
+install_restorer() {
+    echo -e "\n${CYAN}>>> [8/8] Installing Display Window Restorer (GNOME Wayland/X11)...${RESET}"
+    curl -fsSL "${RESTORE_INSTALL_URL}" | bash
 }
 
 install_all() {
@@ -109,6 +115,7 @@ install_all() {
     install_autocomplete || echo -e "${RED}⚠️ TUI Autocomplete setup finished with warning.${RESET}"
     install_research || echo -e "${RED}⚠️ Deep Research setup finished with warning.${RESET}"
     install_link || echo -e "${RED}⚠️ Antigravity Link setup finished with warning.${RESET}"
+    install_restorer || echo -e "${RED}⚠️ Display Window Restorer setup finished with warning.${RESET}"
     
     # Biometric suites prompt
     echo -e "\n${PURPLE}===============================================================================${RESET}"
@@ -158,6 +165,8 @@ for arg in "$@"; do
             install_research; exit 0 ;;
         --link)
             install_link; exit 0 ;;
+        --restorer|--display)
+            install_restorer; exit 0 ;;
         --non-interactive|-y)
             NONINTERACTIVE=1 ;;
         --help|-h)
@@ -171,6 +180,7 @@ for arg in "$@"; do
             echo "  --autocomplete      Install TUI Autocomplete Engine"
             echo "  --research          Install Deep Research Plugin"
             echo "  --link              Install Antigravity Link Peer AI"
+            echo "  --restorer          Install Display Window Restorer"
             exit 0
             ;;
     esac
@@ -184,7 +194,7 @@ echo -e "  Target User: ${CYAN}${USER}${RESET}\n"
 
 while true; do
     echo -e "  ${BOLD}Select an option to install:${RESET}"
-    echo -e "  ${GREEN}[A]${RESET} 🌟  ${BOLD}Install Entire Ecosystem${RESET} (All 7 Suites)"
+    echo -e "  ${GREEN}[A]${RESET} 🌟  ${BOLD}Install Entire Ecosystem${RESET} (All 8 Suites)"
     echo -e "  ${CYAN}[1]${RESET} 🎮  Joy-Con Mouse & Media Remote (Zero-Dependency Evdev/Uinput)"
     echo -e "  ${CYAN}[2]${RESET} 🛡️  Howdy Face ID Biometric Engine (Multi-Cam Shutter Failover)"
     echo -e "  ${CYAN}[3]${RESET} 👆  Digital Persona U.are.U Fingerprint Engine (Bozorth3 Tuner)"
@@ -192,9 +202,10 @@ while true; do
     echo -e "  ${CYAN}[5]${RESET} ⚡  Antigravity TUI Autocomplete & Suggestive Text Engine"
     echo -e "  ${CYAN}[6]${RESET} 🔬  Antigravity Deep Research Engine (/deepresearch)"
     echo -e "  ${CYAN}[7]${RESET} 🤖  Antigravity Link (Cross-OS Peer AI Tandem Mesh)"
+    echo -e "  ${CYAN}[8]${RESET} 🖥️  Display Window Restorer (Multi-Monitor Auto-Window Reconnection)"
     echo -e "  ${RED}[Q]${RESET} ❌  Quit Installer\n"
 
-    echo -ne "  ${BOLD}${PURPLE}Enter selection [A/1-7/Q]: ${RESET}"
+    echo -ne "  ${BOLD}${PURPLE}Enter selection [A/1-8/Q]: ${RESET}"
     read -r CHOICE < /dev/tty || CHOICE="Q"
 
     case "${CHOICE}" in
@@ -230,12 +241,16 @@ while true; do
             install_link
             break
             ;;
+        8)
+            install_restorer
+            break
+            ;;
         [Qq])
             echo -e "\nExiting installer. Happy hacking!\n"
             exit 0
             ;;
         *)
-            echo -e "\n${RED}Invalid option '${CHOICE}'. Please choose A, 1-7, or Q.${RESET}\n"
+            echo -e "\n${RED}Invalid option '${CHOICE}'. Please choose A, 1-8, or Q.${RESET}\n"
             ;;
     esac
 done

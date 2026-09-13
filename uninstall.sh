@@ -60,6 +60,11 @@ uninstall_link() {
     curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/antigravity-link/main/uninstall.sh | bash || true
 }
 
+uninstall_restorer() {
+    echo -e "\n${CYAN}>>> Uninstalling Display Window Restorer...${RESET}"
+    curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/display-window-restorer/main/uninstall.sh | bash || true
+}
+
 uninstall_all() {
     echo -e "${RED}${BOLD}🗑️  Uninstalling Complete Ecosystem...${RESET}\n"
     uninstall_joycon
@@ -69,6 +74,7 @@ uninstall_all() {
     uninstall_autocomplete
     uninstall_research
     uninstall_link
+    uninstall_restorer
     echo -e "\n${GREEN}✓ Entire Mr. Reaper ecosystem successfully uninstalled.${RESET}\n"
 }
 
@@ -91,6 +97,8 @@ for arg in "$@"; do
             uninstall_research; exit 0 ;;
         --link)
             uninstall_link; exit 0 ;;
+        --restorer|--display)
+            uninstall_restorer; exit 0 ;;
         --help|-h)
             echo "Usage: ./uninstall.sh [OPTION]"
             echo "Options:"
@@ -102,6 +110,7 @@ for arg in "$@"; do
             echo "  --autocomplete      Uninstall TUI Autocomplete"
             echo "  --research          Uninstall Deep Research Plugin"
             echo "  --link              Uninstall Antigravity Link"
+            echo "  --restorer          Uninstall Display Window Restorer"
             exit 0
             ;;
     esac
@@ -112,7 +121,7 @@ echo -e "  ${BOLD}${RED}🗑️  MR. REAPER'S LINUX ECOSYSTEM UNINSTALLER${RESET
 echo -e "${PURPLE}===============================================================================${RESET}\n"
 
 echo -e "  ${BOLD}Select an option to uninstall:${RESET}"
-echo -e "  ${RED}[A]${RESET} 🗑️  ${BOLD}Uninstall Entire Ecosystem${RESET} (All 7 Suites)"
+echo -e "  ${RED}[A]${RESET} 🗑️  ${BOLD}Uninstall Entire Ecosystem${RESET} (All 8 Suites)"
 echo -e "  ${CYAN}[1]${RESET} 🎮  Joy-Con Mouse & Media Remote"
 echo -e "  ${CYAN}[2]${RESET} 🛡️  Howdy Face ID Biometric Engine"
 echo -e "  ${CYAN}[3]${RESET} 👆  Digital Persona U.are.U Fingerprint Engine"
@@ -120,9 +129,10 @@ echo -e "  ${CYAN}[4]${RESET} 📝  Reaper's Notes"
 echo -e "  ${CYAN}[5]${RESET} ⚡  Antigravity TUI Autocomplete"
 echo -e "  ${CYAN}[6]${RESET} 🔬  Deep Research Plugin"
 echo -e "  ${CYAN}[7]${RESET} 🤖  Antigravity Link"
+echo -e "  ${CYAN}[8]${RESET} 🖥️  Display Window Restorer"
 echo -e "  ${GREEN}[Q]${RESET} ❌  Cancel / Quit\n"
 
-echo -ne "  ${BOLD}${PURPLE}Enter selection [A/1-7/Q]: ${RESET}"
+echo -ne "  ${BOLD}${PURPLE}Enter selection [A/1-8/Q]: ${RESET}"
 read -r CHOICE < /dev/tty || CHOICE="Q"
 
 case "${CHOICE}" in
@@ -134,5 +144,7 @@ case "${CHOICE}" in
     5) uninstall_autocomplete ;;
     6) uninstall_research ;;
     7) uninstall_link ;;
+    8) uninstall_restorer ;;
     *) echo -e "\nUninstallation cancelled.\n" ;;
 esac
+

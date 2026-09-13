@@ -37,6 +37,7 @@ curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/ImNotMrReaper/main/in
 | ⚡ [**tui-autocomplete**](https://github.com/ImNotMrReaper/tui-autocomplete) | Sub-5ms predictive ghost-text, Levenshtein fuzzy autocorrect & slash expansion for terminal/TUI | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/tui-autocomplete/main/install.sh \| bash` |
 | 🔬 [**deep-research**](https://github.com/ImNotMrReaper/deep-research) | Autonomous multi-hop deep research engine with iterative query expansion & verified reports | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/deep-research/main/install.sh \| bash` |
 | 🤖 [**antigravity-link**](https://github.com/ImNotMrReaper/antigravity-link) | Cross-platform peer AI collaboration, cryptographic conflict prevention & tandem agent sync | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/antigravity-link/main/install.sh \| bash` |
+| 🖥️ [**display-window-restorer**](https://github.com/ImNotMrReaper/display-window-restorer) | Auto-restore window positions, geometries & split-screen layouts on monitor reconnect | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/display-window-restorer/main/install.sh \| bash` |
 
 ---
 
