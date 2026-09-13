@@ -18,6 +18,28 @@
 
 ---
 
+### ⚡ Universal 1-Line Ecosystem Installer
+
+Install any or all of my open-source tools across **Ubuntu, Debian, Fedora, Arch Linux, and openSUSE** with an interactive setup wizard:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/ImNotMrReaper/main/install.sh | bash
+```
+
+> **Automated Setup:** Run non-interactively with `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/ImNotMrReaper/main/install.sh | bash -s -- --all`
+
+| Project | Description | 1-Line Remote Install |
+| :--- | :--- | :--- |
+| 🎮 [**joycon-mouse**](https://github.com/ImNotMrReaper/joycon-mouse) | Precision desktop air-mouse, couch media remote & macro suite for Switch Joy-Cons & gamepads | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/joycon-mouse/main/install.sh \| bash` |
+| 🛡️ [**howdy-face-id-linux**](https://github.com/ImNotMrReaper/howdy-face-id-linux) | Linux Face ID biometric engine with multi-camera shutter failover & 5-angle calibration | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/howdy-face-id-linux/main/install.sh \| sudo bash` |
+| 👆 [**digitalpersona-uareu-linux**](https://github.com/ImNotMrReaper/digitalpersona-uareu-linux) | Digital Persona U.are.U 4500 USB fingerprint driver with tuned Bozorth3 matching & LED control | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/digitalpersona-uareu-linux/main/install.sh \| sudo bash` |
+| 📝 [**reapers-notes**](https://github.com/ImNotMrReaper/reapers-notes) | Modern GTK4 / Libadwaita text editor with local real-time Whisper dictation & biometric vault | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/reapers-notes/main/install.sh \| bash` |
+| ⚡ [**tui-autocomplete**](https://github.com/ImNotMrReaper/tui-autocomplete) | Sub-5ms predictive ghost-text, Levenshtein fuzzy autocorrect & slash expansion for terminal/TUI | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/tui-autocomplete/main/install.sh \| bash` |
+| 🔬 [**deep-research**](https://github.com/ImNotMrReaper/deep-research) | Autonomous multi-hop deep research engine with iterative query expansion & verified reports | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/deep-research/main/install.sh \| bash` |
+| 🤖 [**antigravity-link**](https://github.com/ImNotMrReaper/antigravity-link) | Cross-platform peer AI collaboration, cryptographic conflict prevention & tandem agent sync | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/antigravity-link/main/install.sh \| bash` |
+
+---
+
 ### 🚀 Featured Project
 
 <table>
