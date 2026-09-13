@@ -46,8 +46,8 @@ uninstall_notes() {
 }
 
 uninstall_autocomplete() {
-    echo -e "\n${CYAN}>>> Uninstalling Antigravity TUI Autocomplete...${RESET}"
-    curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/tui-autocomplete/main/uninstall.sh | bash || true
+    echo -e "\n${CYAN}>>> Uninstalling Antigravity TUI Autocorrect & Suggestive Text Engine...${RESET}"
+    curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/antigravity-tui-autocorrect-spellcheck-suggest/main/uninstall.sh | bash || true
 }
 
 uninstall_research() {
