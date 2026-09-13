@@ -1,0 +1,46 @@
+# ==============================================================================
+# Sensitive Personal Data & Credentials Exclusions
+# ==============================================================================
+
+# Private Tokens, API Keys & Environment Variables
+.env
+.env.*
+*.env
+*.secret
+*.secrets
+secrets/
+*credential*
+token.json
+tokens/
+*.token
+*.key
+*.pem
+
+# Private Drafts, Personal Notes & Scratch Files
+drafts/
+private/
+personal/
+scratch/
+tmp/
+temp/
+*.tmp
+*.log
+logs/
+
+# IDE, Editor & OS Artifacts
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak*
+*~
+.DS_Store
+Thumbs.db
+.agy_link/
+
+# Build & Runtime Artifacts
+__pycache__/
+*.pyc
+node_modules/
+.venv/
+venv/
