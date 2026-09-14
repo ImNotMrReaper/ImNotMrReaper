@@ -14,6 +14,10 @@
 [![Reddit](https://img.shields.io/badge/Reddit-u/ImNotMrReaper-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/user/ImNotMrReaper/)
 [![Facebook](https://img.shields.io/badge/Facebook-MrReaper420-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/MrReaper420)
 
+<br/>
+
+![Profile Views](https://komarev.com/ghpvc/?username=ImNotMrReaper&color=7764d8&style=flat-square&label=Profile+Views)
+
 </div>
 
 ---
@@ -28,16 +32,16 @@ curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/ImNotMrReaper/main/in
 
 > **Automated Setup:** Run non-interactively with `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/ImNotMrReaper/main/install.sh | bash -s -- --all`
 
-| Project | Description | 1-Line Remote Install |
-| :--- | :--- | :--- |
-| 🎮 [**joycon-mouse**](https://github.com/ImNotMrReaper/joycon-mouse) | Precision desktop air-mouse, couch media remote & macro suite for Switch Joy-Cons & gamepads | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/joycon-mouse/main/install.sh \| bash` |
-| 🛡️ [**howdy-face-id-linux**](https://github.com/ImNotMrReaper/howdy-face-id-linux) | Linux Face ID biometric engine with multi-camera shutter failover & 5-angle calibration | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/howdy-face-id-linux/main/install.sh \| sudo bash` |
-| 👆 [**digitalpersona-uareu-linux**](https://github.com/ImNotMrReaper/digitalpersona-uareu-linux) | Digital Persona U.are.U 4500 USB fingerprint driver with tuned Bozorth3 matching & LED control | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/digitalpersona-uareu-linux/main/install.sh \| sudo bash` |
-| 📝 [**reapers-notes**](https://github.com/ImNotMrReaper/reapers-notes) | Modern GTK4 / Libadwaita text editor with local real-time Whisper dictation & biometric vault | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/reapers-notes/main/install.sh \| bash` |
-| ⚡ [**antigravity-tui-autocorrect-spellcheck-suggest**](https://github.com/ImNotMrReaper/antigravity-tui-autocorrect-spellcheck-suggest) | Real-time grey ghost-text completion, Tab acceptance & typo spellchecker for Antigravity TUI | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/antigravity-tui-autocorrect-spellcheck-suggest/main/install.sh \| bash` |
-| 🔬 [**deep-research**](https://github.com/ImNotMrReaper/deep-research) | Autonomous multi-hop deep research engine with iterative query expansion & verified reports | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/deep-research/main/install.sh \| bash` |
-| 🤖 [**antigravity-link**](https://github.com/ImNotMrReaper/antigravity-link) | Cross-platform peer AI collaboration, cryptographic conflict prevention & tandem agent sync | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/antigravity-link/main/install.sh \| bash` |
-| 🖥️ [**display-window-restorer**](https://github.com/ImNotMrReaper/display-window-restorer) | Auto-restore window positions, geometries & split-screen layouts on monitor reconnect | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/display-window-restorer/main/install.sh \| bash` |
+| Project | CI | Description | 1-Line Remote Install |
+| :--- | :---: | :--- | :--- |
+| 🎮 [**joycon-mouse**](https://github.com/ImNotMrReaper/joycon-mouse) | [![CI](https://github.com/ImNotMrReaper/joycon-mouse/actions/workflows/ci.yml/badge.svg)](https://github.com/ImNotMrReaper/joycon-mouse/actions) | Precision desktop air-mouse, couch media remote & macro suite for Switch Joy-Cons & gamepads | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/joycon-mouse/main/install.sh \| bash` |
+| 🛡️ [**howdy-face-id-linux**](https://github.com/ImNotMrReaper/howdy-face-id-linux) | [![CI](https://github.com/ImNotMrReaper/howdy-face-id-linux/actions/workflows/ci.yml/badge.svg)](https://github.com/ImNotMrReaper/howdy-face-id-linux/actions) | Linux Face ID biometric engine with multi-camera shutter failover & 5-angle calibration | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/howdy-face-id-linux/main/install.sh \| sudo bash` |
+| 👆 [**digitalpersona-uareu-linux**](https://github.com/ImNotMrReaper/digitalpersona-uareu-linux) | [![CI](https://github.com/ImNotMrReaper/digitalpersona-uareu-linux/actions/workflows/ci.yml/badge.svg)](https://github.com/ImNotMrReaper/digitalpersona-uareu-linux/actions) | Digital Persona U.are.U 4500 USB fingerprint driver with tuned Bozorth3 matching & LED control | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/digitalpersona-uareu-linux/main/install.sh \| sudo bash` |
+| 📝 [**reapers-notes**](https://github.com/ImNotMrReaper/reapers-notes) | [![CI](https://github.com/ImNotMrReaper/reapers-notes/actions/workflows/ci.yml/badge.svg)](https://github.com/ImNotMrReaper/reapers-notes/actions) | Modern GTK4 / Libadwaita text editor with local real-time Whisper dictation & biometric vault | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/reapers-notes/main/install.sh \| bash` |
+| ⚡ [**agy-suggest**](https://github.com/ImNotMrReaper/antigravity-tui-autocorrect-spellcheck-suggest) | [![CI](https://github.com/ImNotMrReaper/antigravity-tui-autocorrect-spellcheck-suggest/actions/workflows/ci.yml/badge.svg)](https://github.com/ImNotMrReaper/antigravity-tui-autocorrect-spellcheck-suggest/actions) | Real-time grey ghost-text completion, Tab acceptance & typo spellchecker for Antigravity TUI | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/antigravity-tui-autocorrect-spellcheck-suggest/main/install.sh \| bash` |
+| 🔬 [**deep-research**](https://github.com/ImNotMrReaper/deep-research) | [![CI](https://github.com/ImNotMrReaper/deep-research/actions/workflows/ci.yml/badge.svg)](https://github.com/ImNotMrReaper/deep-research/actions) | Autonomous multi-hop deep research engine with iterative query expansion & verified reports | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/deep-research/main/install.sh \| bash` |
+| 🤖 [**antigravity-link**](https://github.com/ImNotMrReaper/antigravity-link) | [![CI](https://github.com/ImNotMrReaper/antigravity-link/actions/workflows/ci.yml/badge.svg)](https://github.com/ImNotMrReaper/antigravity-link/actions) | Cross-platform peer AI collaboration, cryptographic conflict prevention & tandem agent sync | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/antigravity-link/main/install.sh \| bash` |
+| 🖥️ [**display-window-restorer**](https://github.com/ImNotMrReaper/display-window-restorer) | [![CI](https://github.com/ImNotMrReaper/display-window-restorer/actions/workflows/ci.yml/badge.svg)](https://github.com/ImNotMrReaper/display-window-restorer/actions) | Auto-restore window positions, geometries & split-screen layouts on monitor reconnect | `curl -fsSL https://raw.githubusercontent.com/ImNotMrReaper/display-window-restorer/main/install.sh \| bash` |
 
 ---
 
